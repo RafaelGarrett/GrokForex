@@ -765,9 +765,9 @@
             document.getElementById('tokyo-time').textContent = now.toLocaleTimeString('ja-JP', { ...options, timeZone: 'Asia/Tokyo' });
         }
 
-        const apiKey = "SUA_CHAVE_REAL_AQUI"; // Substitua por uma chave válida da NewsAPI
+        const apiKey = "308e15ca20284fc5a7d6e6734b2ff60d"; // Substitua por uma chave válida da NewsAPI
         function loadNews() {
-            if (!apiKey || apiKey === "SUA_CHAVE_REAL_AQUI") {
+            if (!apiKey || apiKey === "308e15ca20284fc5a7d6e6734b2ff60d") {
                 document.getElementById('forex-news-list-pt').innerHTML = '<li>Insira uma chave de API válida</li>';
                 document.getElementById('crypto-news-list-pt').innerHTML = '<li>Insira uma chave de API válida</li>';
                 return;
