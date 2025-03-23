@@ -243,18 +243,18 @@
 
     <div class="container">
         <!-- Notícias Forex -->
-        <div class="forex-news-section section news-section">
+        <!-- <div class="forex-news-section section news-section">
             <h2>Notícias de Forex</h2>
             <button onclick="loadNews()" aria-label="Atualizar notícias de Forex">Atualizar Notícias</button>
             <ul id="forex-news-list-pt" class="news-list"></ul>
-        </div>
+        </div> -->
 
         <!-- Notícias Cripto -->
-        <div class="crypto-news-section section news-section">
+        <!-- <div class="crypto-news-section section news-section">
             <h2>Notícias de Criptomoedas</h2>
             <button onclick="loadNews()" aria-label="Atualizar notícias de criptomoedas">Atualizar Notícias</button>
             <ul id="crypto-news-list-pt" class="news-list"></ul>
-        </div>
+        </div> -->
 
         <!-- Preço do Ouro -->
         <div class="gold-price-section section">
@@ -431,7 +431,7 @@
             updateCryptoTicker();
             updateForexTicker();
             updateScrollingColumn();
-            loadNews();
+            //loadNews();
             updateClocks();
 
             setInterval(updateTicker, 10000);
@@ -765,7 +765,7 @@
             document.getElementById('tokyo-time').textContent = now.toLocaleTimeString('ja-JP', { ...options, timeZone: 'Asia/Tokyo' });
         }
 
-        const apiKey = "308e15ca20284fc5a7d6e6734b2f..."; // Substitua por uma chave válida da NewsAPI
+        /*const apiKey = "308e15ca20284fc5a7d6e6734b2f..."; // Substitua por uma chave válida da NewsAPI
         function loadNews() {
             if (!apiKey || apiKey === "308e15ca20284fc5a7d6e6734b2f...") {
                 document.getElementById('forex-news-list-pt').innerHTML = '<li>Insira uma chave de API válida</li>';
@@ -778,7 +778,7 @@
             };
             fetchNews(urls.forex, 'forex-news-list-pt');
             fetchNews(urls.crypto, 'crypto-news-list-pt');
-        }
+        }*/
 
         function fetchNews(url, listId) {
             fetch(url, { cache: 'force-cache' })
